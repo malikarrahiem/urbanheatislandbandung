@@ -2,6 +2,7 @@
 var Bandung = ee.FeatureCollection('ft:1DBU7wSBrZShHw03i_viU1YsEZ12oqdUFtFNOSuja').geometry();
 var Cekban = ee.FeatureCollection('ft:1CXlHgB_oKshWXJRYnpnuzjrwN8wNfjh3m9asJpYd').geometry();
 var aoi = Bandung;
+Map.setCenter(107.6055, -6.9303, 11);
 //aoi = bandung untuk area kota Bandung, aoi = Cekban untuk area Cekungan Bandung
 
 //2.1 Membuat fungsi NDVI untuk dihitung belakangan
