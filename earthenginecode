@@ -225,3 +225,6 @@ Map.addLayer(baksil, {color: COLOR.PARK});
 Map.addLayer(tahura, {color: COLOR.FOREST});
 Map.addLayer(kota, {color: COLOR.CITY});
 
+//kode program ini adalah modifikasi kode dari Antony Cak "Characterizing Temporal and Spatial Changes in Land Surface Temperature Across The Amazon Basin 
+//Using Thermal and Infrared Satellite Data" yang dipresentasikan dalam Dipresentasikan pada American Geophysical Union, Fall Meeting 2017
+//tautan https://github.com/tonycak/amazon_lst
