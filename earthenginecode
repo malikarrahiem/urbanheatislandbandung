@@ -1,6 +1,8 @@
 //1. Menentukan area penelitian
-var Bandung = ee.FeatureCollection('ft:1DBU7wSBrZShHw03i_viU1YsEZ12oqdUFtFNOSuja').geometry();
-var Cekban = ee.FeatureCollection('ft:1CXlHgB_oKshWXJRYnpnuzjrwN8wNfjh3m9asJpYd').geometry();
+var Bandung = ee.FeatureCollection('ft:1xaEFm8u4y7anwS9XNazLID6lJHlOYrlWUZen0x2a').geometry();
+//jika ingin menentukan area penelitian sendiri, Anda bisa membuat polygon, menamai polygon itu terserah anda (secara default adalah geometry)
+//kemudian di ke 6 berikut Anda menulis aoi = (nama yang Anda kehendaki)
+
 var aoi = Bandung;
 Map.setCenter(107.6055, -6.9303, 11);
 //aoi = bandung untuk area kota Bandung, aoi = Cekban untuk area Cekungan Bandung
@@ -172,7 +174,8 @@ var l8_2_2_stdev_region_image = l8_2_2.reduce(ee.Reducer.stdDev());
 // var l8_2_2_series4_mean = l8_2_2.filterDate('2017-01-01', '2017-12-31').mean();
 // var l8_2_2_series5_mean = l8_2_2.filterDate('2018-01-01', '2019-04-30').mean();
 
-//4 Membuat grafik seri waktu masing-masing tata guna lahan
+//4 Membuat grafik seri waktu masing-masing tata guna lahan. Grafik ini sebenarnya adalah program yang berbeda. Untuk itu kita akan
+//menentukan area penelitian yang baru. Area penelitiannya bisa berupa titik, atau berupa polygon. Saya memilih menggunakan polygon kecil.
 
 // membuat simbologi
 var COLOR = {
